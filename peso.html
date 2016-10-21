@@ -11,7 +11,8 @@
   <p>En la tierra pesas distinto a Marte o Jupiter</p>
 <script type="text/javascript">
   var usuario = prompt("Cual es tu peso?");
-  var planeta = prompt("En que planeta deseas saber tu peso\n 1. Marte \n 2. Jupiter");
+  var planeta = prompt("En que planeta deseas saber tu peso\n 1. Marte \n 2. Jupiter \n 3. Saturno");
+ 
 
 //alert(usuario);
 //alert(planeta);
@@ -19,7 +20,8 @@
 
 var gravedad_tierra = 9.8;
 var gravedad_marte = 3.7;
-var gravedad_jupiter = 22.9;
+var gravedad_jupiter = 24.9;
+var gravedad_saturno = 10.44;
 
 
 if (planeta == 1) {
@@ -29,6 +31,11 @@ if (planeta == 1) {
 else if( planeta == 2){
   var peso_et = (usuario * gravedad_jupiter) / gravedad_tierra;
   var nombrep = "Jupiter"
+}
+  
+  else if( planeta == 3){
+    var peso_nt = (usuario * gravedad_saturno) / gravedad_tierra;
+    var nombrep = "Saturno"
 }
 
 
