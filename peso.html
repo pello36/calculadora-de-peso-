@@ -2,11 +2,22 @@
 <html>
 <head>
     <style>
-  body{
-    background-color: "green";
-    color: "green";
-    font-size: 40px;
-  }
+        #caja{
+      
+            position: absolute;
+            left: 30%;
+            top: 10%;
+            background-color: 3FF21C;
+            padding: 20px;
+            border-color: 3FF21C;
+            border-style: solid;
+            border-width: thick;
+            font-family: Courier;
+            box-shadow: 10px 10px 5px #888888;
+            
+        }
+                
+            
   </style>
   <title>Peso en otros planetas</title>
   <style type="text/css">
@@ -14,6 +25,9 @@
   </style>
 </head>
 <body>
+    
+    <div id="caja1">
+    
   <h1>Tu peso en otros planetas</h1>
   <p>En la tierra pesas distinto a Marte o Jupiter</p>
     
@@ -24,6 +38,8 @@
     <input type="radio" id="jupiter" name="planeta" value="2"> Jupiter<br>
     <input type="radio" id="saturno" name="planeta" value="3"> Saturno</p>
     <p><input type="button" value="calcular" onclick="calculo()"></p>
+        
+    </div>
        
 <script type="text/javascript">
   /*var usuario = prompt("Cual es tu peso?");
